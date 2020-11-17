@@ -13,7 +13,9 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      models.user.hasMany(models.entry)
+      models.user.hasMany(models.comment)
+      models.user.hasMany(models.like)
     }
     validPassword(passwordTyped) {
       return bcrypt.compareSync(passwordTyped, this.password);
@@ -41,7 +43,7 @@ module.exports = (sequelize, DataTypes) => {
       validate: {
         len: {
           args: [1, 52],
-          msg: 'Name must be between 1 and 52 characters'
+          msg: 'Name must be between 1 and 50 characters'
         }
       }
     },
@@ -77,41 +79,5 @@ module.exports = (sequelize, DataTypes) => {
     }
   })
 
-  return user;
-};
-
-
-
-
-
-
-
-
-
-
-'use strict';
-const {
-  Model
-} = require('sequelize');
-module.exports = (sequelize, DataTypes) => {
-  class user extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
-    }
-  };
-  user.init({
-    email: DataTypes.STRING,
-    name: DataTypes.STRING,
-    username: DataTypes.STRING,
-    password: DataTypes.STRING
-  }, {
-    sequelize,
-    modelName: 'user',
-  });
   return user;
 };
