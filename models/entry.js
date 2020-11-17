@@ -10,12 +10,21 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      models.entry.belongsTo(models.user)
+      models.entry.hasOne(models.prompt)
+      models.entry.hasMany(models.like)
     }
   };
   entry.init({
     userId: DataTypes.INTEGER,
-    promptId: DataTypes.INTEGER,
+    promptId: {
+      type: DataTypes.INTEGER,
+      allowNull: true,
+    },
+    quote: {
+      type: DataTypes.STRING,
+      allowNull: true,
+    },
     title: DataTypes.TEXT,
     body: DataTypes.TEXT,
     isPublic: DataTypes.BOOLEAN
