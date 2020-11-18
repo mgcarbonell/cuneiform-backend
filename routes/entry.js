@@ -5,7 +5,7 @@ const ctrl = require('../controllers');
 // routes
 router.get('/', ctrl.entry.index)
 router.get('/:id', ctrl.entry.show)
-router.post('/new', ctrl.entry.new)
+router.post('/create', ctrl.entry.create)
 router.put('/:id', ctrl.entry.update)
 router.delete('/:id', ctrl.entry.destroy)
 

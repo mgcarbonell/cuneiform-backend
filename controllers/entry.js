@@ -6,8 +6,7 @@ const entry = (req, res) => {
     if(!foundEntries) return res.json({
       message: 'No Entries have been found.'
     })
-
-    res. status(200).json({entries: foundEntries})
+    res.status(200).json({entries: foundEntries})
   }) 
 }
 
@@ -42,9 +41,9 @@ const update = (req, res) => {
   })
 }
 
-const destroyEntry (req, res) => {
+const destroy = (req, res) => {
   db.entry.destroy({
-    where: {id: req.params.id0}
+    where: {id: req.params.id}
   }).then(() => {
     res.status(200)
   })
