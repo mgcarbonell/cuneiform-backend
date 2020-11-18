@@ -10,8 +10,13 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
+<<<<<<< HEAD
+      models.like.belongsTo(user)
+      models.like.belongsTo(entry)
+=======
       models.like.belongsTo(models.user)
       models.like.belongsTo(models.entry)
+>>>>>>> submain
     }
   };
   like.init({
