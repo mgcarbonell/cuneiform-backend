@@ -13,7 +13,9 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      models.user.hasMany(models.entry)
+      models.user.hasMany(models.comment)
+      models.user.hasMany(models.like)
     }
     validPassword(passwordTyped) {
       return bcrypt.compareSync(passwordTyped, this.password);
@@ -40,8 +42,17 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.STRING,
       validate: {
         len: {
-          args: [1, 99],
-          msg: 'Name must be between 1 and 99 characters'
+          args: [1, 52],
+          msg: 'Name must be between 1 and 50 characters'
+        }
+      }
+    },
+    username: {
+      type: DataTypes.STRING,
+      validate: {
+        len: {
+          args: [1, 20],
+          msg: 'Username must be between 1 and 20 characters'
         }
       }
     },
