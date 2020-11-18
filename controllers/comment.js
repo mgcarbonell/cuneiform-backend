@@ -5,7 +5,7 @@ const db = require('../models')
 const comment = (req, res) => {
   db.comment.findAll().then((foundComments) => {
     if(!foundComments) return res.json({
-      message: "No comments found."
+      message: "No comments to this entry."
     })
     res.status(200).json({comments: foundComments})
   })
