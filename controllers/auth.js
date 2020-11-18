@@ -5,11 +5,19 @@ const login = (req, res) => {
 }
 
 const register = (req, res) => {
+<<<<<<< HEAD
   const { username, name, email, password } = req.body
   
   // validate the POSTed data - making sure we have a name, an email, a pw
   if (!name || !username || !email || !password) {
     return res.json({ message: 'Please enter a name, an email, and a password' })
+=======
+  const { name, username, email, password } = req.body
+  
+  // validate the POSTed data - making sure we have a name, an email, a pw
+  if (!name || !username || !email || !password) {
+    return res.json({ message: 'Please enter a name, an username, an email, and a password' })
+>>>>>>> submain
   }
 
   // make sure the user doesn't already exist
@@ -23,6 +31,7 @@ const register = (req, res) => {
       db.user.create({
         username,
         name,
+        username,
         email,
         password
       }).then(newUser => {

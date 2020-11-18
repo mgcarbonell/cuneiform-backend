@@ -1,3 +1,7 @@
 /node_modules
 /config/config.json
+<<<<<<< HEAD
 .env
+=======
+.env
+>>>>>>> submain
