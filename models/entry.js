@@ -11,11 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       models.entry.belongsTo(models.user)
-<<<<<<< HEAD
       models.entry.hasOne(models.prompt)
-=======
-      models.entry.belongsTo(models.prompt)
->>>>>>> submain
       models.entry.hasMany(models.like)
     }
   };
@@ -23,19 +19,11 @@ module.exports = (sequelize, DataTypes) => {
     userId: DataTypes.INTEGER,
     promptId: {
       type: DataTypes.INTEGER,
-<<<<<<< HEAD
-      allowNull: true,
-    },
-    quote: {
-      type: DataTypes.STRING,
-      allowNull: true,
-=======
       allowNull: true
     },
     quote: {
       type: DataTypes.STRING,
       allowNull: true
->>>>>>> submain
     },
     title: DataTypes.TEXT,
     body: DataTypes.TEXT,
