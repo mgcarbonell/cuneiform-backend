@@ -2,7 +2,7 @@
 
 module.exports = {
   up: async (queryInterface, Sequelize) => {
-    await queryInterface.bulkdelete('users', null, {truncate: true, cascade: true, restartIdentity: true});
+    await queryInterface.bulkDelete('users', null, {truncate: true, cascade: true, restartIdentity: true});
     
     const bulkUsers = await queryInterface.bulkInsert('users', [
       {
@@ -114,7 +114,7 @@ module.exports = {
     ], {returning: true});
     console.log('bulk insert:', bulkUsers);
 
-    await queryInterface.bulkdelete('prompts', null, {truncate: true, cascade: true, restartIdentity: true});
+    await queryInterface.bulkDelete('prompts', null, {truncate: true, cascade: true, restartIdentity: true});
 
     const bulkPrompts = await queryInterface.bulkInsert('prompts', [
       {
@@ -235,7 +235,7 @@ module.exports = {
     ], { returning: true});
     console.log('prompts: ', bulkPrompts);
 
-    await queryInterface.bulkdelete('entries', null, {truncate: true, cascade: true, restartIdentity: true});
+    await queryInterface.bulkDelete('entries', null, {truncate: true, cascade: true, restartIdentity: true});
 
     const bulkEntries = await queryInterface.bulkInsert('entries', [
       {
