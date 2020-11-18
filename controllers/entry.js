@@ -1,7 +1,7 @@
 const db = require('../models')
 
 // working
-const entry = (req, res) => {
+const index = (req, res) => {
   db.entry.findAll().then((foundEntries) => {
     if(!foundEntries) return res.json({
       message: 'No Entries have been found.'
@@ -51,7 +51,7 @@ const destroy = (req, res) => {
 
 
 module.exports ={
-  entry,
+  index,
   show,
   create,
   update,
