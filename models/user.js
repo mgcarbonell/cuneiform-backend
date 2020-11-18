@@ -11,13 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       models.user.hasMany(models.entry)
-<<<<<<< HEAD
-      models.user.hasMany(models.like)
-      models.user.hasMany(models.comment)
-=======
       models.user.hasMany(models.comment)
       models.user.hasMany(models.like)
->>>>>>> submain
     }
     validPassword(passwordTyped) {
       return bcrypt.compareSync(passwordTyped, this.password);
@@ -39,16 +34,6 @@ module.exports = (sequelize, DataTypes) => {
         args: [1, 52],
         msg: 'Name must be between 1 and 52 characters'
       }
-<<<<<<< HEAD
-    }
-  },
-  name: {
-    type: DataTypes.STRING,
-    validate: {
-      len: {
-        args: [1, 99],
-        msg: 'Name must be between 1 and 99 characters'
-=======
     },
     name: {
       type: DataTypes.STRING,
@@ -66,7 +51,6 @@ module.exports = (sequelize, DataTypes) => {
           args: [1, 20],
           msg: 'Username must be between 1 and 20 characters'
         }
->>>>>>> submain
       }
     }
   },
