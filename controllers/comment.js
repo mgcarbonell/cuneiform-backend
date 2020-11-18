@@ -2,7 +2,7 @@
 const db = require('../models')
 
 // working
-const comment = (req, res) => {
+const index = (req, res) => {
   db.comment.findAll().then((foundComments) => {
     if(!foundComments) return res.json({
       message: "No comments to this entry."
@@ -42,7 +42,7 @@ const destroy = (req, res) => {
 }
 
 module.exports = {
-  comment,
+  index,
   create,
   update,
   destroy
