@@ -27,14 +27,6 @@ module.exports = (sequelize, DataTypes) => {
   };
 
   user.init({
-  username: {
-    type: DataTypes.STRING,
-    validate: {
-      len: {
-        args: [1, 52],
-        msg: 'Name must be between 1 and 52 characters'
-      }
-    },
     name: {
       type: DataTypes.STRING,
       validate: {
@@ -52,25 +44,24 @@ module.exports = (sequelize, DataTypes) => {
           msg: 'Username must be between 1 and 20 characters'
         }
       }
-    }
-  },
-  email: {
-    validate: {
-      isEmail: {
-        msg: 'Invalid email address'
+    },
+    email: {
+      validate: {
+        isEmail: {
+          msg: 'Invalid email address'
+        }
       }
-    }
-  },
-  password: {
-    type: DataTypes.STRING,
-    validate: {
-      len: {
-        args: [8, 99],
-        msg: 'Password must be between 8 and 99 characters'
+    },
+    password: {
+      type: DataTypes.STRING,
+      validate: {
+        len: {
+          args: [8, 99],
+          msg: 'Password must be between 8 and 99 characters'
+        }
       }
-    }
-  }
-},
+    },
+  },
     {
     sequelize,
     modelName: 'user',
