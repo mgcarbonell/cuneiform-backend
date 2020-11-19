@@ -1,5 +1,3 @@
-const bcrypt = require('bcrypt');
-
 'use strict';
 const bcrypt = require('bcrypt');
 
