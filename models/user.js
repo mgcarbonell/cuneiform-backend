@@ -1,3 +1,5 @@
+const bcrypt = require('bcrypt');
+
 'use strict';
 const {
   Model
@@ -46,6 +48,7 @@ module.exports = (sequelize, DataTypes) => {
       }
     },
     email: {
+      type: DataTypes.STRING,
       validate: {
         isEmail: {
           msg: 'Invalid email address'
