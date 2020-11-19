@@ -6,6 +6,7 @@ const login = (req, res) => {
 
 const register = (req, res) => {
   const { name, username, email, password } = req.body
+  console.log(req.body)
   
   // validate the POSTed data - making sure we have a name, an email, a pw
   if (!name || !username || !email || !password) {
@@ -21,7 +22,6 @@ const register = (req, res) => {
 
       // if the user doesnt exist, create and save a user to the DB
       db.user.create({
-        username,
         name,
         username,
         email,
