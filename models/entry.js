@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       models.entry.belongsTo(models.user)
-      models.entry.hasOne(models.prompt)
+      // models.entry.hasOne(models.prompt)
       models.entry.hasMany(models.like)
     }
   };
