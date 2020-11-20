@@ -2,10 +2,26 @@ const db = require('../models')
 
 // working
 const index = (req, res) => {
-  // how would we findAll with the boolean isPublic = true? Can we pass it in as an [or]?
-  db.entry.findAll().then((foundEntries) => {
+  db.entry.findAll({
+    where: {
+      "isPublic": true
+    }
+  }).then((foundEntries) => {
     if(!foundEntries) return res.json({
-      message: 'No Entries have been found.'
+      message: 'No entries have been found.'
+    })
+    res.status(200).json({entries: foundEntries})
+  }) 
+}
+
+const userIndex = (req, res) => {
+  db.entry.findAll({
+    where: {
+      "userId": req.params.id
+    }
+  }).then((foundEntries) => {
+    if(!foundEntries) return res.json({
+      message: 'No user entries have been found.'
     })
     res.status(200).json({entries: foundEntries})
   }) 
@@ -53,6 +69,7 @@ const destroy = (req, res) => {
 
 module.exports ={
   index,
+  userIndex,
   show,
   create,
   update,

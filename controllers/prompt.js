@@ -1,3 +1,5 @@
+const db = require('../models')
+
 // all prompts
 const index = (req, res) => {
   db.prompt.findAll().then((foundPrompts) => {
@@ -23,7 +25,7 @@ const show = (req, res) => {
 
 // delete prompt - admin protected
 
-module.exports={
+module.exports ={
   index,
   show
 }

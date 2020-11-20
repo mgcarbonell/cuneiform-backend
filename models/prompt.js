@@ -10,7 +10,8 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      models.prompt.belongsTo(models.entry)
+      // models.prompt.belongsTo(models.entry)
+      models.prompt.hasMany(models.entry)
     }
   };
   prompt.init({
