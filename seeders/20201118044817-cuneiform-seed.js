@@ -564,9 +564,9 @@ module.exports = {
         userId: bulkUsers[15].id,
         promptId: bulkPrompts[22].id,
         quote: '',
-        title: 'This is a private entry',
+        title: 'This is a public entry',
         body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
-        isPublic: false,
+        isPublic: true,
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
