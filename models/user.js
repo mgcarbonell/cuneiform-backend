@@ -69,5 +69,15 @@ module.exports = (sequelize, DataTypes) => {
     sequelize,
     modelName: 'user',
   });
+
+  user.beforeCreate((pendingUser, options) => {
+    if (pendingUser && pendingUser.password) {
+      // hash the password
+      let hash = bcrypt.hashSync(pendingUser.password, 12);
+      // store the hash as the user's password
+      pendingUser.password = hash;
+    }
+  })
+  
   return user;
 };
