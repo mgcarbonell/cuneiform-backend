@@ -46,6 +46,7 @@ app.use(passport.session())
 app.use('/api/v1/auth', routes.auth)
 app.use('/api/v1/entry', routes.entry)
 app.use('api/v1/comment', routes.comment)
+app.use('api/vi/prompt', routes.prompt)
 
 // connection
 app.listen(port, () => console.log(`Server is running on port ${port}`))
