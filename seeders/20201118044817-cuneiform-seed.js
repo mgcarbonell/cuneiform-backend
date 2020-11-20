@@ -249,14 +249,32 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
+        userId: bulkUsers[0].id,
+        promptId: bulkPrompts[0].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
         userId: bulkUsers[1].id,
-        promptId: bulkPrompts[1].id,
+        promptId: bulkPrompts[20].id,
         quote: '',
         title: 'Consectetur adipiscing elit',
         body: `"This is a very unexpected turn of affairs," said I; "and what then?"
 
         "Well, I found my plans very seriously menaced. It looked as if the pair might take an immediate departure, and so necessitate very prompt and energetic measures on my part. At the church door, however, they separated, he driving back to the Temple, and she to her own house. 'I shall drive out in the park at five as usual,' she said as she left him. I heard no more. They drove away in different directions, and I went off to make my own arrangements."`,
         isPublic: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
+        userId: bulkUsers[1].id,
+        promptId: bulkPrompts[15].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -269,6 +287,15 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
+        userId: bulkUsers[2].id,
+        promptId: bulkPrompts[11].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
         userId: bulkUsers[3].id,
         promptId: bulkPrompts[3].id,
         quote: '',
@@ -278,12 +305,30 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
+        userId: bulkUsers[3].id,
+        promptId: bulkPrompts[1].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
         userId: bulkUsers[4].id,
         promptId: bulkPrompts[4].id,
         quote: '',
         title: 'Massa id neque',
         body: `There at least he was not denied admittance; but when he came in, he was shocked at the change which had taken place in the doctor’s appearance. He had his death-warrant written legibly upon his face. The rosy man had grown pale; his flesh had fallen away; he was visibly balder and older; and yet it was not so much these tokens of a swift physical decay that arrested the lawyer’s notice, as a look in the eye and quality of manner that seemed to testify to some deep-seated terror of the mind. It was unlikely that the doctor should fear death; and yet that was what Utterson was tempted to suspect. “Yes,” he thought; “he is a doctor, he must know his own state and that his days are counted; and the knowledge is more than he can bear.” And yet when Utterson remarked on his ill-looks, it was with an air of great firmness that Lanyon declared himself a doomed man.`,
         isPublic: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
+        userId: bulkUsers[4].id,
+        promptId: bulkPrompts[12].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -303,6 +348,15 @@ module.exports = {
         
         “He will not see me,” said the lawyer.`,
         isPublic: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
+        userId: bulkUsers[5].id,
+        promptId: bulkPrompts[0].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -327,6 +381,15 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
+        userId: bulkUsers[6].id,
+        promptId: bulkPrompts[10].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
         userId: bulkUsers[7].id,
         promptId: bulkPrompts[7].id,
         quote: '',
@@ -340,6 +403,15 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
+        userId: bulkUsers[7].id,
+        promptId: bulkPrompts[3].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
         userId: bulkUsers[8].id,
         promptId: bulkPrompts[8].id,
         quote: '',
@@ -348,6 +420,15 @@ module.exports = {
 
         Next morning he introduced me to Mrs. Lucy Porter, his step-daughter. She was now an old maid, with much simplicity of manner. She had never been in London. Her brother, a Captain in the navy, had left her a fortune of ten thousand pounds; about a third of which she had laid out in building a stately house, and making a handsome garden, in an elevated situation in Lichfield. Johnson, when here by himself, used to live at her house. She reverenced him, and he had a parental tenderness for her.`,
         isPublic: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },{
+        userId: bulkUsers[9].id,
+        promptId: bulkPrompts[11].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -375,6 +456,15 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
+        userId: bulkUsers[10].id,
+        promptId: bulkPrompts[0].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
         userId: bulkUsers[11].id,
         promptId: bulkPrompts[18].id,
         quote: '',
@@ -385,6 +475,15 @@ module.exports = {
         
         “FITZWILLIAM DARCY”`,
         isPublic: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
+        userId: bulkUsers[11].id,
+        promptId: bulkPrompts[12].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -405,6 +504,15 @@ module.exports = {
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
+        userId: bulkUsers[12].id,
+        promptId: bulkPrompts[13].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
         userId: bulkUsers[13].id,
         promptId: bulkPrompts[20].id,
         quote: '',
@@ -415,6 +523,15 @@ module.exports = {
         
         And with these words he hastily left the room, and Elizabeth heard him the next moment open the front door and quit the house.`,
         isPublic: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
+        userId: bulkUsers[13].id,
+        promptId: bulkPrompts[20].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
         createdAt: new Date(),
         updatedAt: new Date()
       }, {
@@ -434,9 +551,36 @@ module.exports = {
         isPublic: true,
         createdAt: new Date(),
         updatedAt: new Date()
+      }, {
+        userId: bulkUsers[14].id,
+        promptId: bulkPrompts[14].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
+        userId: bulkUsers[15].id,
+        promptId: bulkPrompts[22].id,
+        quote: '',
+        title: 'This is a public entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: true,
+        createdAt: new Date(),
+        updatedAt: new Date()
+      }, {
+        userId: bulkUsers[15].id,
+        promptId: bulkPrompts[22].id,
+        quote: '',
+        title: 'This is a private entry',
+        body: 'I was half-dragged up to the altar, and before I knew where I was I found myself mumbling responses which were whispered in my ear, and vouching for things of which I knew nothing, and generally assisting in the secure tying up of Irene Adler, spinster, to Godfrey Norton, bachelor. It was all done in an instant, and there was the gentleman thanking me on the one side and the lady on the other, while the clergyman beamed on me in front. It was the most preposterous position in which I ever found myself in my life, and it was the thought of it that started me laughing just now. It seems that there had been some informality about their license, that the clergyman absolutely refused to marry them without a witness of some sort, and that my lucky appearance saved the bridegroom from having to sally out into the streets in search of a best man. The bride gave me a sovereign, and I mean to wear it on my watch-chain in memory of the occasion.',
+        isPublic: false,
+        createdAt: new Date(),
+        updatedAt: new Date()
       }, 
     ], {returning: true});
-    console.log('entries')
+    console.log(bulkEntries)
 
   },
 
