@@ -3,7 +3,7 @@ const db = require('../models')
 const login = (req, res) => {
   res.json({ 
     user: req.user.id,
-    userName: req.user.username
+    username: req.user.username
   })
 }
 
