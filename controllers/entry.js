@@ -43,8 +43,13 @@ const create = (req, res) => {
 }
 
 const update = (req, res) => {
+  console.log(req.body)
   db.entry.update({
-    ...req.body
+    // ...req.body
+    title: req.body.title,
+    body: req.body.body
+    // title: data.title,
+    // body: data.body
   }, {
     where: {
       id: req.params.id
@@ -65,7 +70,6 @@ const destroy = (req, res) => {
     res.status(200)
   })
 }
-
 
 module.exports ={
   index,
