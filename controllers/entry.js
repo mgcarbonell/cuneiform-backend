@@ -10,7 +10,7 @@ const index = (req, res) => {
     if(!foundEntries) return res.json({
       message: 'No entries have been found.'
     })
-    res.status(200).json({entries: foundEntries})
+    res.status(200).json({ entries: foundEntries })
   }) 
 }
 
@@ -23,7 +23,7 @@ const userIndex = (req, res) => {
     if(!foundEntries) return res.json({
       message: 'No user entries have been found.'
     })
-    res.status(200).json({entries: foundEntries})
+    res.status(200).json({ entries: foundEntries })
   }) 
 }
 
@@ -38,7 +38,7 @@ const show = (req, res) => {
 
 const create = (req, res) => {
   db.entry.create(req.body).then((savedEntry) => {
-    res.status(200).json({entry: savedEntry})
+    res.status(200).json({ entry: savedEntry })
   })
 }
 
@@ -50,17 +50,19 @@ const update = (req, res) => {
       id: req.params.id
     }
   }).then((updatedEntry) => {
+    console.log(req.params.id)
     if (!updatedEntry) return res.json({
       message: "No entry with that ID found."
     })
-
-    res.status(200).json({entry: updatedEntry})
+    res.status(200).json({ entry: updatedEntry })
   })
 }
 
 const destroy = (req, res) => {
   db.entry.destroy({
-    where: {id: req.params.id}
+    where: {
+      id: req.params.id
+    }
   }).then(() => {
     res.status(200)
   })
