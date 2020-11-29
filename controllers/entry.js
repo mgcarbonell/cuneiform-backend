@@ -3,9 +3,10 @@ const db = require('../models')
 // working
 const index = (req, res) => {
   db.entry.findAll({
-    where: {
-      "isPublic": true
-    }
+    where: { "isPublic": true },
+    order: [
+      [ 'createdAt', 'DESC' ]
+    ]
   }).then((foundEntries) => {
     if(!foundEntries) return res.json({
       message: 'No entries have been found.'

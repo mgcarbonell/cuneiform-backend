@@ -15,9 +15,12 @@ const index = (req, res) => {
 
 const show = (req, res) => {
   db.comment.findAll({
-    where: {
-      "entryId": req.params.id
-    }
+    where: { "entryId": req.params.id },
+    order: [
+      [ 'createdAt', 'DESC' ]
+    ],
+    limit: 10,
+    offset: 0
   }).then(
     (foundComments) => {
     if(!foundComments) return res.json({
