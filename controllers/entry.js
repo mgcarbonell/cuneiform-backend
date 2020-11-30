@@ -19,7 +19,10 @@ const userIndex = (req, res) => {
   db.entry.findAll({
     where: {
       "userId": req.params.id
-    }
+    },
+    order: [
+      [ 'createdAt', 'DESC' ]
+    ]
   }).then((foundEntries) => {
     if(!foundEntries) return res.json({
       message: 'No user entries have been found.'
@@ -44,8 +47,13 @@ const create = (req, res) => {
 }
 
 const update = (req, res) => {
+  console.log(req.body)
   db.entry.update({
-    ...req.body
+    // ...req.body
+    title: req.body.title,
+    body: req.body.body
+    // title: data.title,
+    // body: data.body
   }, {
     where: {
       id: req.params.id
@@ -68,7 +76,6 @@ const destroy = (req, res) => {
     res.status(200)
   })
 }
-
 
 module.exports ={
   index,

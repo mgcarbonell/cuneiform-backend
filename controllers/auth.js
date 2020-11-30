@@ -7,6 +7,7 @@ const login = (req, res) => {
   })
 }
 
+
 const register = (req, res) => {
   const { name, username, email, password } = req.body
   console.log(req.body)
