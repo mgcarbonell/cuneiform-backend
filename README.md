@@ -24,8 +24,7 @@ We hope to foster creative writers, people who wish to jot down their thoughts, 
 
 ## Unsolved Problems
 
-* Why Paper won't do everything we want it to do in regards to lay out on the page.
-* Saving quote or prompt to the entry database.
+* Matching userId from entry table to username from user table.
 
 ## Future Enhancements
 
