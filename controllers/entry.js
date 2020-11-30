@@ -19,7 +19,10 @@ const userIndex = (req, res) => {
   db.entry.findAll({
     where: {
       "userId": req.params.id
-    }
+    },
+    order: [
+      [ 'createdAt', 'DESC' ]
+    ]
   }).then((foundEntries) => {
     if(!foundEntries) return res.json({
       message: 'No user entries have been found.'
