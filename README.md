@@ -30,6 +30,11 @@ We hope to foster creative writers, people who wish to jot down their thoughts, 
 
 Please see our backlog on our Trello. 
 
+## Code Snippets
+
+![Seed file](./public/seeder-file.png) Mario Carbonell
+![Comment model](./public/comment-model-find-all-constraints.png) Devin Blair
+
 ## About Us
 
 We are two Software Engineers from General Assembly's Software Engineering Immersive, check us out!
