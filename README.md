@@ -18,6 +18,10 @@ We hope to foster creative writers, people who wish to jot down their thoughts, 
 * Postgres
 * Sequelize
 
+## Link to our Frontend
+
+https://github.com/mgcarbonell/cuneiform-frontend
+
 ## Getting Started
 
 [Our Trello](https://trello.com/b/jJX36PQ2/cuneiform)
