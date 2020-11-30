@@ -55,3 +55,5 @@ The Confirmation Dialog was found via Andrew Bliss @ [JavaScript in Plain Englis
 We definitely learned a lot from Param @ [Learn With PARAM](https://learnwithparam.com/blog/how-to-pass-props-to-state-properly-in-react-hooks/)
 
 Thank you to [Giphy](https://giphy.com/) for the About/Contact/Help gifs.
+
+And finally, thank you to [Lit Ipsum](https://litipsum.com/) for the literary lorem ipsum text.
