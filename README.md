@@ -32,8 +32,8 @@ Please see our backlog on our Trello.
 
 ## Code Snippets
 
-![Seed file](./public/seeder-file.png) Mario Carbonell
-![Comment model](./public/comment-model-find-all-constraints.png) Devin Blair
+![Seed file by Mario](./public/seeder-file.png)
+![Comment model by Devin](./public/comment-model-find-all-constraints.png)
 
 ## About Us
 
