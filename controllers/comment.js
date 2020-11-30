@@ -3,7 +3,26 @@ const db = require('../models')
 
 // working
 const index = (req, res) => {
-  db.comment.findAll().then((foundComments) => {
+  db.comment.findAll(
+  ).then(
+    (foundComments) => {
+    if(!foundComments) return res.json({
+      message: "No comments to this entry."
+    })
+    res.status(200).json({comments: foundComments})
+  })
+}
+
+const show = (req, res) => {
+  db.comment.findAll({
+    where: { "entryId": req.params.id },
+    order: [
+      [ 'createdAt', 'DESC' ]
+    ],
+    limit: 10,
+    offset: 0
+  }).then(
+    (foundComments) => {
     if(!foundComments) return res.json({
       message: "No comments to this entry."
     })
@@ -43,6 +62,7 @@ const destroy = (req, res) => {
 
 module.exports = {
   index,
+  show,
   create,
   update,
   destroy
