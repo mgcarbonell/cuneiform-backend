@@ -1,3 +1,6 @@
 module.exports = {
-    auth: require('./auth')
+    auth: require('./auth'),
+    entry: require('./entry'),
+    comment: require('./comment'),
+    prompt: require('./prompt')
 }

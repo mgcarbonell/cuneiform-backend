@@ -1,6 +1,5 @@
 'use strict';
-// added
-const bcrypt = require('bcrypt')
+const bcrypt = require('bcrypt');
 
 const {
   Model
@@ -13,7 +12,9 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      models.user.hasMany(models.entry)
+      models.user.hasMany(models.comment)
+      models.user.hasMany(models.like)
     }
     validPassword(passwordTyped) {
       return bcrypt.compareSync(passwordTyped, this.password);
@@ -26,22 +27,31 @@ module.exports = (sequelize, DataTypes) => {
       return userData;
     }
   };
-  //changed
+
   user.init({
+    name: {
+      type: DataTypes.STRING,
+      validate: {
+        len: {
+          args: [1, 52],
+          msg: 'Name must be between 1 and 50 characters'
+        }
+      }
+    },
+    username: {
+      type: DataTypes.STRING,
+      validate: {
+        len: {
+          args: [1, 20],
+          msg: 'Username must be between 1 and 20 characters'
+        }
+      }
+    },
     email: {
       type: DataTypes.STRING,
       validate: {
         isEmail: {
           msg: 'Invalid email address'
-        }
-      }
-    },
-    name: {
-      type: DataTypes.STRING,
-      validate: {
-        len: {
-          args: [1, 99],
-          msg: 'Name must be between 1 and 99 characters'
         }
       }
     },
@@ -53,8 +63,9 @@ module.exports = (sequelize, DataTypes) => {
           msg: 'Password must be between 8 and 99 characters'
         }
       }
-    }
-  }, {
+    },
+  },
+    {
     sequelize,
     modelName: 'user',
   });
@@ -67,6 +78,6 @@ module.exports = (sequelize, DataTypes) => {
       pendingUser.password = hash;
     }
   })
-
+  
   return user;
 };
